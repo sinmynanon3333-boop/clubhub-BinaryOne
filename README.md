@@ -1,12 +1,13 @@
 # Team charter · <team name> (v1.0, 2026-__-__)
 
 ## Members and roles
-|     Member     |        GitHub        | Role (Sprint 1) | Shared hat |
-|----------------|----------------------|-----------------|------------|
-| Sin Meynanon   | @sinmynanon3333-boop | Product Owner   |            |
-| Ath Mengcheu   | @Mercardi            | Scrum Master    |            |
-| Soth Monyoudom | @                    | Developer       |            |
-| Ngoun Taymeng  | @Ngountaymeng        |
+|     Member     |         GitHub          | Role (Sprint 1) | Shared hat |
+|----------------|-------------------------|-----------------|------------|
+| Sin Meynanon   | @sinmynanon3333-boop    | Product Owner   |            |
+| Ath Mengcheu   | @Mercardi               | Scrum Master    |            |
+| Soth Monyoudom | @sothmonyoudom-cyber    | Developer       |            |
+| Ngoun Taymeng  | @Ngountaymeng           | Admin           |            |
+
 Scrum Master rotation: Sprint 1 = ______, Sprint 2 = ______.
 The Product Owner stays the same all semester.
 
