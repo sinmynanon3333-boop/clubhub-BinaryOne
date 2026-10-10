@@ -1,1 +1,4 @@
-/.vscode/
+
+build/
+vcpkg_installed/
+.vs/
