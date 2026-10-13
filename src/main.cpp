@@ -1,10 +1,4 @@
-#include <iostream>
-#include <FL/Fl.H>
-#include <FL/Fl_Window.H>
-#include <FL/Fl_Box.H>
-#include <FL/Fl_Button.H>
-#include <FL/Fl_PNG_Image.H>
-#include <FL/Fl_Group.H>
+
 #include "Pages/WelcomePage.hpp"
 #include "Pages/LoginForm.hpp"
 void button_cb(Fl_Widget *w, void *data)
