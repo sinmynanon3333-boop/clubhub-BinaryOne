@@ -7,6 +7,7 @@
 | Ath Mengcheu   | @Mercardi               | Scrum Master    |            |
 | Soth Monyoudom | @sothmonyoudom-cyber    | Developer       |            |
 | Ngoun Taymeng  | @Ngountaymeng           | Admin           |            |
+| Tra Makhen     | @tramakhen7-source      | Designer        |            |
 
 Scrum Master rotation: Sprint 1 = ______, Sprint 2 = ______.
 The Product Owner stays the same all semester.
