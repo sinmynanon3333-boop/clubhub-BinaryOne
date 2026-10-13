@@ -25,8 +25,5 @@ The Product Owner stays the same all semester.
 | Meetings      |                  |                   |
 
 ## Decision rules
-- Product questions:
-- Technical questions:
-- Deadlock (no agreement after __ hours):
-- Where decisions are recorded: lab01/decisions.md
+
 
