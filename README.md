@@ -30,5 +30,3 @@ The Product Owner stays the same all semester.
 - Deadlock (no agreement after __ hours):
 - Where decisions are recorded: lab01/decisions.md
 
-## Agreed by
-<!-- each member adds "- Name, date" in their own commit (Task 2) -->
