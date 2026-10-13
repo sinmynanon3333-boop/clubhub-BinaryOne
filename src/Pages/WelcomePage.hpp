@@ -9,6 +9,8 @@
 #include <FL/Fl_Help_View.H>
 class WelComePage : public Fl_Group{
     public:
+     Fl_Button *btn=nullptr;
+    public:
         WelComePage(int x,int y,int w,int h): Fl_Group(x, y, w, h){
         Fl_Group *Welcome=new Fl_Group(0,0,w,h);
         int cap_w = 680;
@@ -58,7 +60,7 @@ class WelComePage : public Fl_Group{
         Fl_Box *txtDetail = new Fl_Box(w / 2 - 137, img_y + 190, 250, 200, "The central campus life  for students of the Institute of Technology of Cambodia.\nDiscover 30+ engineering, robotic, and cultural societies, register for workshops, and \naccelerate your university journey.");
         txtDetail->labelcolor(FL_BLACK);
         txtDetail->labelsize(17);
-        Fl_Button *btn = new Fl_Button(w / 2 - 75, img_y + 330, 150, 50, "Get Started  @s15@->");
+        btn = new Fl_Button(w / 2 - 75, img_y + 330, 150, 50, "Get Started  @s15@->");
         btn->box(FL_RFLAT_BOX);
         btn->color(FL_BLUE);
         btn->labelcolor(FL_WHITE);
