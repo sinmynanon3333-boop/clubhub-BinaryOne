@@ -1,21 +1,36 @@
-# ITC Club Hub · Team <team name>
+# Team charter · <team name> (v1.0, 2026-__-__)
 
-An application for the student clubs of the Institute of Technology of
-Cambodia. Course project, Introduction to Software Engineering.
+## Members and roles
+| Member | GitHub | Role (Sprint 1) | Shared hat |
+|--------|--------|-----------------|------------|
+|        | @      | Product Owner   |            |
+|        | @      | Scrum Master    |            |
+|        | @      | Developer       |            |
 
-## Team
-| Member | GitHub | Role (Sprint 1) |
-|--------|--------|-----------------|
-<!-- each member adds their own row in their own commit -->
+Scrum Master rotation: Sprint 1 = ______, Sprint 2 = ______.
+The Product Owner stays the same all semester.
 
-## Repository layout
-| Path | Content |
-|------|---------|
-| `lab01/` ... `lab11/` | Documents of each lab |
-| `include/clubhub/`    | Public C++ headers (namespace clubhub) |
-| `src/`                | C++ sources |
-| `tests/`              | Unit tests (added in a later lab) |
+## Working agreements
+1. TODO (checkable: a time, a number or an observable action)
+2. ...
 
-## Build
-    cmake -S . -B build
-    cmake --build build
+## Communication channels
+| Purpose       | Channel          | Expected response |
+|---------------|------------------|-------------------|
+| Chat          |                  |                   |
+| Work items    | GitHub Issues    |                   |
+| Files         | this repository  | n/a               |
+| Meetings      |                  |                   |
+
+## Decision rules
+- Product questions:
+- Technical questions:
+- Deadlock (no agreement after __ hours):
+- Where decisions are recorded: lab01/decisions.md
+
+## Agreed by
+<!-- each member adds "- Name, date" in their own commit (Task 2) -->
+# Decision log · <team name> (v0.1, 2026-__-__)
+| # | Date | Decision | Decided by | Alternatives considered |
+|---|------|----------|------------|-------------------------|
+| 1 |      | Team name "..." | vote 4-1 | ... |
