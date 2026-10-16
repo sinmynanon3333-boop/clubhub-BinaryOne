@@ -7,6 +7,8 @@
 #include <FL/Fl_PNG_Image.H>
 #include <FL/Fl_Group.H>
 #include <FL/Fl_Help_View.H>
+#include "Components/Header.hpp"
+using namespace header;
 class WelComePage : public Fl_Group{
     public:
      Fl_Button *btn=nullptr;
@@ -17,26 +19,27 @@ class WelComePage : public Fl_Group{
         int cap_h = 36;
         int cap_x = (w / 2) - (cap_w / 2);
         int cap_y = 40;
-        Fl_Group *capsule = new Fl_Group(cap_x, cap_y, cap_w, cap_h);
-        capsule->box(FL_RFLAT_BOX);
-        capsule->color(FL_WHITE);
-        Fl_Box *txt1 = new Fl_Box(cap_x + 20, cap_y, 250, cap_h, "Institute of Technology of Cambodia (ITC)");
-        txt1->labelcolor(fl_rgb_color(100, 100, 100));
-        txt1->labelsize(13);
-        txt1->align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE);
+        HeaderPage *header=new HeaderPage(cap_x,cap_y,cap_w,cap_h);
+        // Fl_Group *capsule = new Fl_Group(cap_x, cap_y, cap_w, cap_h);
+        // capsule->box(FL_RFLAT_BOX);
+        // capsule->color(FL_WHITE);
+        // Fl_Box *txt1 = new Fl_Box(cap_x + 20, cap_y, 250, cap_h, "Institute of Technology of Cambodia (ITC)");
+        // txt1->labelcolor(fl_rgb_color(100, 100, 100));
+        // txt1->labelsize(13);
+        // txt1->align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE);
 
-        Fl_Box *txt2 = new Fl_Box(cap_x + 275, cap_y, 130, cap_h, "•  OFFICIAL PORTAL  •");
-        txt2->labelcolor(fl_rgb_color(20, 90, 200));
-        txt2->labelfont(FL_BOLD);
-        txt2->labelsize(12);
+        // Fl_Box *txt2 = new Fl_Box(cap_x + 275, cap_y, 130, cap_h, "•  OFFICIAL PORTAL  •");
+        // txt2->labelcolor(fl_rgb_color(20, 90, 200));
+        // txt2->labelfont(FL_BOLD);
+        // txt2->labelsize(12);
 
-        txt2->align(FL_ALIGN_CENTER | FL_ALIGN_INSIDE);
-        Fl_Box *txt3 = new Fl_Box(cap_x + 410, cap_y, 250, cap_h, "វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា");
-        txt3->labelcolor(fl_rgb_color(100, 100, 100));
-        txt3->labelsize(13);
+        // txt2->align(FL_ALIGN_CENTER | FL_ALIGN_INSIDE);
+        // Fl_Box *txt3 = new Fl_Box(cap_x + 410, cap_y, 250, cap_h, "វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា");
+        // txt3->labelcolor(fl_rgb_color(100, 100, 100));
+        // txt3->labelsize(20);
 
-        txt3->align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE);
-        capsule->end();
+        // txt3->align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE);
+        // capsule->end();
         Fl_PNG_Image *img = new Fl_PNG_Image("D:/clubhub-BinaryOne/Institute_of_Technology_of_Cambodia_logo.png");
         int img_w = 200;
         int img_h = 200;
