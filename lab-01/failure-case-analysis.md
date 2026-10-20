@@ -19,7 +19,7 @@ A dynamic configuration update (Channel File 291) for the CrowdStrike Falcon sen
 
 ```mermaid
 flowchart TD
-  A["Unvalidated Channel File 291 deployed via cloud pipeline"] --> B["Content Validator fails to detect malformed parameter count"]
-  B --> C["Kernel-level driver parses corrupt telemetry rule file"]
-  C --> D["Out-of-bounds memory access triggers unhandled exception"]
-  D --> E["8.5 million Windows endpoints crash into global BSOD loops"]
+    A["Unvalidated Channel File 291 deployed via cloud pipeline"] --> B["Content Validator fails to detect malformed parameter count"]
+    B --> C["Kernel-level driver parses corrupt telemetry rule file"]
+    C --> D["Out-of-bounds memory access triggers unhandled exception"]
+    D --> E["8.5 million Windows endpoints crash into global BSOD loops"]
