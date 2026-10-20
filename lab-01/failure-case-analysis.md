@@ -19,7 +19,8 @@ A dynamic configuration update (Channel File 291) for the CrowdStrike Falcon sen
 
 ```mermaid
 flowchart TD
-    A[Unvalidated Channel File 291 deployed] --> B[Content Validator misses malformed count]
-    B --> C[Kernel driver parses corrupt rule file]
-    C --> D[Out-of-bounds memory access triggers exception]
-    D --> E[8.5M Windows systems crash into BSOD loops]
+    A["Unvalidated Channel File 291 deployed"] --> B["Content Validator misses malformed count"]
+    B --> C["Kernel driver parses corrupt rule file"]
+    C --> D["Out-of-bounds memory access triggers exception"]
+    D --> E["8.5M Windows systems crash into BSOD loops"]
+```
