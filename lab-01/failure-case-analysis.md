@@ -23,34 +23,3 @@ flowchart TD
   B --> C["Kernel-level driver parses corrupt telemetry rule file"]
   C --> D["Out-of-bounds memory access triggers unhandled exception"]
   D --> E["8.5 million Windows endpoints crash into global BSOD loops"]
-
-## 4. Root Causes Analysis
-
-| # | Root Cause | Type | Essential Difficulty | Why / Justification |
-| :-: | :--- | :---: | :---: | :--- |
-| **R1** | **Parser Bounds Validation Omission**<br>The Content Validator skipped checking parameter counts on dynamic input fields. | `Technical` | **Complexity** | The intricate parsing logic for dynamic telemetry rules failed to anticipate and safely handle unexpected structural changes during rapid updates. |
-| **R2** | **Unstaged Cloud Deployment**<br>Updates were broadcast globally instantly without phased canary rollout rings. | `Process` | **Invisibility** | Automated cloud delivery hid the lack of localized staging visibility and telemetry health checks before worldwide broadcast. |
-| **R3** | **Kernel-Space Parsing Risk**<br>Dynamic configuration files were parsed directly inside privileged OS kernel memory. | `Technical` | **Conformity** | Conforming to high-performance real-time execution constraints forced parsing inside kernel space where any single memory fault causes total system collapse. |
-
----
-
-## 5. Practices That Would Have Prevented or Limited the Failure
-
-| Root Cause | Engineering Practice | Relevant Course Chapter |
-| :--- | :--- | :---: |
-| **R1**<br>*(Parser Bounds Omission)* | **Automated Schema & Input Validation**<br>Implement strict boundary-checking parsers and automated unit tests for every telemetry template version. | `Chapter 09`<br>Testing & Quality Assurance |
-| **R2**<br>*(Unstaged Deployment)* | **Staged Canary Rollouts & Feature Rings**<br>Deploy updates incrementally to small subsets of hosts with automated health checks before general availability. | `Chapter 08`<br>DevOps & CI/CD Pipelines |
-| **R3**<br>*(Kernel-Space Parsing)* | **User-Space Sandboxing & Isolation**<br>Move complex configuration parsing out of kernel space into safe user-space daemons to isolate memory faults. | `Chapter 12`<br>Reliability & Safety Engineering |
-
----
-
-## 6. Concrete Lessons for ITC Club Hub
-1. **Strict Server-Side Input Bounds Validation:** In ITC Club Hub, never assume incoming CSV or form data is well-formed. Enforce strict server-side validation rules (e.g., rejecting capacity values outside $1 \le x \le 500$ or mismatched data types) before committing records to the database.
-2. **Staged Database Migrations & Rollouts:** Do not push schema changes or backend configuration updates directly to production. Implement incremental canary deployments and automated rollback scripts to catch breaking changes safely.
-
----
-
-## 7. Sources
-1. CrowdStrike, *Falcon Content Update Preliminary Post-Incident Review (PIR)*, July 2024 (Primary Official Investigation Report). https://www.crowdstrike.com/blog/falcon-content-update-preliminary-post-incident-review/
-2. Microsoft Security Response Center (MSRC), *Analysis and Technical Guidance Following the CrowdStrike Falcon Incident*, July 2024.
-3. Software Engineering Institute (SEI), *Safety-Critical Deployment Pipelines and Defensive Parsing Guidelines*, Software Engineering Institute, 2023.
