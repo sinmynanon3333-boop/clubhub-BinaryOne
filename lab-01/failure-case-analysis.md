@@ -13,7 +13,8 @@ The CrowdStrike Falcon sensor is an endpoint security software running inside th
 | 2024-07-19 | 8.5 million Windows machines enter unrecoverable BSOD boot loops, grounding global flights and halting medical operations. |
 | 2024-07-24 | CrowdStrike publishes its official Preliminary Post-Incident Review (PIR) detailing parser validation flaws. |
 
-## 3. What failed
+## 3. What Failed
+
 A dynamic configuration update (Channel File 291) for the CrowdStrike Falcon sensor bypassed input validation checks in the Content Validator software. When Windows systems loaded this file into the kernel driver (`csagent.sys`), it caused an out-of-bounds memory read error. Operating at kernel level, this memory fault provoked an unhandled kernel exception, forcing millions of systems into endless Blue Screen of Death (BSOD) boot loops.
 
 ```mermaid
