@@ -17,7 +17,7 @@ public:
     CardScroll(int X, int Y, int W, int maxH, int pad = 12, int gap = 12)
         : Fl_Scroll(X, Y, W, 0), maxH_(maxH), pad_(pad), gap_(gap) {
         this->type(0);                            // 0 = never show scrollbars
-        this->box(FL_FLAT_BOX);
+        this->box(FL_RFLAT_BOX);
         color(rgb(0xF4F5FB));
         // Invisible 1px anchor at the top-left. Fl_Scroll measures its scroll
         // position from the bounding box of its children, so without this the

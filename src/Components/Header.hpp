@@ -6,11 +6,6 @@ namespace header
 {
     class HeaderPage : public Fl_Group
     {
-    private:
-        //  int cap_w = 680;
-        // int cap_h = 36;
-        // int cap_x = (1280 / 2) - (cap_w / 2);
-        // int cap_y = 40;
     public:
         HeaderPage(int x, int y, int w, int h) : Fl_Group(x, y, w, h)
         {
