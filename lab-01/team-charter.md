@@ -3,11 +3,11 @@
 ## Members and roles
 | Member          | GitHub               | Role            | Shared hat |
 |-----------------|----------------------|-----------------|------------|
-| Sin Meynanon    | @sin meynanon        | Product Owner   |            |
-| Art Mengcheu    | @Mengcheu            | Scrum Master    |            |
+| Sin Meynanon    | @sinmynanon3333-boop | Product Owner   |            |
+| Art Mengcheu    | @Mercardi            | Scrum Master    |            |
 | Soth Monyoudam  | @sothmonyoudam-cyber | Developer       |            |
-| Ngoun Taymeng   | @TaymengN            | Developer       |            |
-| Tra Makhen      | @Makhen              | Developer       |            |
+| Ngoun Taymeng   | @Ngountaymeng        | Admin       |            |
+| Tra Makhen      | @tramakhen7-sourc    | Designer       |            |
 Scrum Master rotation: Sprint 1 = ______, Sprint 2 = ______.
 The Product Owner stays the same all semester.
 
