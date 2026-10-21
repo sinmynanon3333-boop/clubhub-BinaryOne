@@ -15,5 +15,6 @@ Inputs reused from earlier labs: none (first lab).
 
 ## Change log
 | Date            | Version | Change | Commit |
-| 2026-10-20      | v1.0    |--------|--------|
-| 2026-__-__ | v0.1.0 | Team, repository, failure analysis, problem statement, first build | abc1234 |
+| 2026-10-16      | v1.0    | decisions.md, failure=risks.md, problem-statement.md, stakeholders.md,team-charter.md | make new branch and create md files |
+| 2026-10-20      | v1.0    | failure-case-analysis.md, failure-risks.md |Updated failure risks for ITC Club Hub to version 1.0, added detailed descriptions and countermeasures for each risk|
+| 2026-10-20      | v1.0    | README.md,problem-statement.md | Update problem-statment.md and README.md |
