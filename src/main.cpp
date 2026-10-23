@@ -31,8 +31,8 @@ int main()
     int card_x = (win_w - card_w) / 2;
     int card_y = (win_h - card_h) / 2;
 
-    StudentLoginCard *stud = new StudentLoginCard(card_x, card_y, card_w, card_h);
-    // WelComePage *welcome=new WelComePage(x,y,w,h);
+    // StudentLoginCard *stud = new StudentLoginCard(card_x, card_y, card_w, card_h);
+    WelComePage *welcome=new WelComePage(x,y,w,h);
     window->end();
     window->show();
     return Fl::run();
