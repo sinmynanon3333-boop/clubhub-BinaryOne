@@ -12,6 +12,6 @@ Unlike isolated chat groups and disconnected spreadsheets, our product is secure
 ## Today's workaround
 Currently, students rely on combination of messaging  apps for communication and shared spreadsheet lists.
 ## Scope
-- Built in C++ this semester:
-- Modelled only (web and mobile):
-- Out of scope:
+- Built in C++ this semester:Domain logic, business rule enforcement (no double booking, capacity limits, 24h cancellation cut-off), GUI  front end using FlTK Framework , and sqlite as database for either user database and servers database using crow as our backend for easier connection with database .
+- Modelled only (web and mobile):Web client and Mobile application interfaces (Labs 02 & 06).
+- Out of scope:Online payment processing, SMS gateways, and direct university SSO integration.
