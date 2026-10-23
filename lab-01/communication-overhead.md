@@ -26,15 +26,15 @@ flowchart LR
 ```
 
 ## Two practices
-1. **10-minute stand-up, three times a week (Mon, Wed, Fri).** The Scrum Master (Mengcheu) runs it. Everyone answers: what I finished, what I do next, what blocks me. One shared meeting replaces most one-to-one "what are you working on?" chats, so the 10 member-to-member paths shrink to short ad-hoc conversations.
-   - Stand-ups: 3 × 10 min = 30 min
-   - Residual member-to-member paths: 10 × 5 min = 50 min
+1. **20-minute stand-up, three times a week (Mon, Wed, Fri).** The Scrum Master (Mengcheu) runs it. Everyone answers: what I finished, what I do next, what blocks me. One shared meeting replaces most one-to-one "what are you working on?" chats, so the 10 member-to-member paths shrink to short ad-hoc conversations.
+   - Stand-ups: 3 × 20 min = 60 min
+   - Residual member-to-member paths: 20 × 5 min = 100 min
    - PO-to-client (unchanged): 1 × 20 min = 20 min
-   - Total 100 min -> **new overhead: 1.67 h/week (11.1 %)**
+   - Total 300 min -> **new overhead: 5.00 h/week (33.3%)**
 2. **GitHub Issues as the single source of truth.** The PO (Meynanon) turns every client request into an Issue with one assignee, a label and a status on the project board. The Designer (Makhen) attaches mockups to the Issue, and the Developer (MonyOudom) links commits and pull requests to it. Questions like "who owns this?" and "is it done?" are answered by reading the board, and decisions are written in the Issue thread, not in private chats. Cost per member-to-member path drops from 20 min to 10 min.
-   - Member-to-member: 10 × 10 min = 100 min
+   - Member-to-member: 10 × 20 min = 200 min
    - PO-to-client (unchanged): 1 × 20 min = 20 min
-   - Total 120 min -> **new overhead: 2.00 h/week (13.3 %)**
+   - Total 220 min -> **new overhead: 3.67 h/week (24.4 %)**
 
 ## A sixth member in week 11?
 Model (b) with n = 6 members:
