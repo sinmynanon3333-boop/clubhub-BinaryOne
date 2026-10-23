@@ -1,15 +1,16 @@
 # Problem statement · ITC Club Hub (v0.1, 2026-__-__)
 
 ## Problem
-The problem of ____________________ affects ____________________;
-the impact of which is ____________________.
-A successful solution would ____________________.
+The problem of fragmented communication, manual record-keeping and disogarnized event planning affects university club leader and memebers;
+the impact of which is missed announcements and event participations.
+A successful solution would combine users access, screen navigation and event tracking into single dashboard.
 
 ## Vision
-For ______ who ______, ITC Club Hub is a ______ that ______.
-Unlike ______, our product ______.
+For university club officers who struggle to keep members engaged and oganized, ITC Club Hub is an application for the student clubs of the Institute of Technology of Cambodia (ITC) that is used for  clubs publish events, students register for them, organisers check attendance and administrators see what happens across clubs.
+Unlike isolated chat groups and disconnected spreadsheets, our product is secure platform with custom screens and safe user access.
 
 ## Today's workaround
+Currently, students rely on combination of messaging  apps for communication and shared spreadsheet lists.
 ## Scope
 - Built in C++ this semester:
 - Modelled only (web and mobile):
