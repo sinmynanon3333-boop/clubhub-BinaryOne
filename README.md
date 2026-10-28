@@ -1,4 +1,4 @@
-# Team charter · <team name> (v1.0, 2026-__-__)
+# Team charter · <team BinaryOne> (v1.0, 2026-10-28)
 
 ## Members and roles
 |     Member     |         GitHub          | Role (Sprint 1) | Shared hat |
@@ -9,7 +9,7 @@
 | Ngoun Taymeng  | @Ngountaymeng           | Admin           |            |
 | Tra Makhen     | @tramakhen7-source      | Designer        |            |
 
-Scrum Master rotation: Sprint 1 = ______, Sprint 2 = ______.
+Scrum Master rotation: Sprint 1 = Ath Mengcheu, Sprint 2 = Soth Monyoudom.
 The Product Owner stays the same all semester.
 
 ## Working agreements
