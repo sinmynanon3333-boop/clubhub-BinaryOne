@@ -27,7 +27,9 @@ The Product Owner stays the same all semester.
 | Meetings   | Google Meet / In-person | Scheduled 48h in advance[cite: 1] |
 
 ## Decision rules
+
 - **Product scope & features:** Decided by the **Product Owner** after consulting the client (TA/Instructor) and team.
 - **Technical & architecture choices:** Decided by majority developer vote after a 15-minute discussion.
 - **Deadlocks:** If there is no agreement after 24 hours, the Scrum Master and Product Owner make the final binding decision.
 - **Decision Log:** All major architectural and team decisions are recorded in `lab01/decisions.md`.
+
