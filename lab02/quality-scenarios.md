@@ -72,12 +72,12 @@ Version 1.0 · 2026-11-02 · Reviewed by (Scrum Master): Pending
 
 | Scenario | Business importance | Technical risk | Protects | First? |
 |---|---|---|---|---|
-| QAS-01 Availability | H | M | Students, club leaders and organisers | Yes |
-| QAS-02 Performance | H | H | Organisers and students | Yes |
-| QAS-03 Usability | M | M | Students and club leaders | No |
-| QAS-04 Security | H | H | Students and administrators | No |
-| QAS-05 Modifiability | M | M | Developers and maintainers | No |
-| QAS-06 Portability | M | M | Students, organisers and administrators | No |
+| QAS-01 Availability | High | Medium | Students, club leaders and organisers | Yes |
+| QAS-02 Performance | High | High | Organisers and students | Yes |
+| QAS-03 Usability | Medium | Medium | Students and club leaders | No |
+| QAS-04 Security | High | High | Students and administrators | No |
+| QAS-05 Modifiability | Medium | Medium | Developers and maintainers | No |
+| QAS-06 Portability | Medium | Medium | Students, organisers and administrators | No |
 
 ### Architecture Priorities
 
