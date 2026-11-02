@@ -1,6 +1,6 @@
 # Lab 02 – ITC Club Hub Context Diagram
 
-**Author:** Soth Monyoudom  
+**Author:** Soth Mony Oudam  
 **Version:** 1.0  
 **Date:** 2026-11-03
 
