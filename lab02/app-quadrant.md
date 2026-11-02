@@ -6,5 +6,8 @@ quadrantChart
   quadrant-2 Always on
   quadrant-3 Best effort
   quadrant-4 Fast but tolerant
-  Telegram: [0.50, 0.50]
+  Mobile banking: [0.75, 0.90]
+  Telegram: [0.50, 0.80]
+  ABS controller: [0.98, 0.98]
+  Mooldle at ITC: [0.40, 0.65]
   %% TODO: move Telegram, then add the other four (values 0 to 1)

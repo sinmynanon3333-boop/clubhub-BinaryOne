@@ -9,4 +9,4 @@ Version 1.0 · 2026-10-30 · Team: CounterBlock
 | 4 | Moodle at ITC | Education | Web app | Web browser on phone/PC; accessed through ITC website | Client-Sever | Availbility/usability/data integrity | |
 | 5 | Game: Hay Day | Entertainment | Native/Mobile | Android/iOS download from play stor/app store | Client-Sever | Availabiliy/usability/reliablity| |
 
-Biggest difference we found: the purpose and requirements. Mobile banking focuses on security, Telegram focuses on communication and availability, ABS controllers focus on safety and real-time performance, Moodle focuses on education and accessibility, games focus on performance and user experience.
+Biggest difference we found is the purpose and requirements. Mobile banking focuses on security, Telegram focuses on communication and availability, ABS controllers focus on safety and real-time performance, Moodle focuses on education and accessibility, games focus on performance and user experience.
