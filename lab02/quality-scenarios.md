@@ -2,7 +2,7 @@
 
 Version 1.0 · 2026-11-02 · Reviewed by (Scrum Master): Pending
 
-## QAS-01 · Availability
+## QAS-01 · Availability · written by Soth Mony Oudam
 
 | Part | Content |
 |---|---|
@@ -13,7 +13,7 @@ Version 1.0 · 2026-11-02 · Reviewed by (Scrum Master): Pending
 | Response | The system remains available and allows users to browse events, register and manage event information. If a temporary failure occurs, the system recovers without losing confirmed registrations. |
 | Response measure | Maintain at least 99.5% monthly availability. For a 30-day month: 720 hours × 0.5% = 3.6 hours maximum downtime. |
 
-## QAS-02 · Performance at Check-in
+## QAS-02 · Performance at Check-in · written by Soth Mony Oudam
 
 | Part | Content |
 |---|---|
@@ -24,7 +24,7 @@ Version 1.0 · 2026-11-02 · Reviewed by (Scrum Master): Pending
 | Response | The system verifies the student's registration and records attendance without significantly delaying the queue. When internet connectivity is unavailable, check-in records are stored locally for later synchronization. |
 | Response measure | At least 95% of online check-in requests complete within 2 seconds. All 200 arrivals must be processed within 10 minutes, and queued offline records must synchronize within 60 seconds after connectivity returns. |
 
-## QAS-03 · Usability
+## QAS-03 · Usability · written by Soth Mony Oudam
 
 | Part | Content |
 |---|---|
@@ -35,7 +35,7 @@ Version 1.0 · 2026-11-02 · Reviewed by (Scrum Master): Pending
 | Response | The interface provides clear navigation, understandable instructions and a confirmation message after successful registration. |
 | Response measure | At least 90% of first-time test users complete registration within 60 seconds, using no more than 4 taps after opening the event page. |
 
-## QAS-04 · Security
+## QAS-04 · Security · written by Soth Mony Oudam
 
 | Part | Content |
 |---|---|
@@ -46,7 +46,7 @@ Version 1.0 · 2026-11-02 · Reviewed by (Scrum Master): Pending
 | Response | The system rejects unauthorized requests, prevents access to protected information and records security events for review. |
 | Response measure | 100% of unauthorized access attempts in the security test must be denied, with 0 successful unauthorized disclosures of student names, student IDs, email addresses, phone numbers or attendance records. |
 
-## QAS-05 · Modifiability
+## QAS-05 · Modifiability · written by Soth Mony Oudam
 
 | Part | Content |
 |---|---|
@@ -57,7 +57,7 @@ Version 1.0 · 2026-11-02 · Reviewed by (Scrum Master): Pending
 | Response | The new business rule is implemented in the C++ core logic. The CLI only needs to display the new status, and existing registration behaviour remains unchanged. |
 | Response measure | Complete within 2 person-days; modify no more than 4 files under `include/` and `src/`; make 0 changes in `src/cli/` other than display-related changes; and ensure all existing tests pass. |
 
-## QAS-06 · Portability
+## QAS-06 · Portability · written by Soth Mony Oudam
 
 | Part | Content |
 |---|---|
