@@ -21,4 +21,4 @@
 # Channel Log
 | Date | Version | What changed | By |
 |------|---------|--------------|----|
-| 2026-11-03 | 1.0 | First version of the Lab-02 README. Added the offline check-in design, the context diagram, the queued check-in header, the event core and the list-events CLI. | TODO |
+| 2026-11-03 | 1.0 | First version of the Lab-02 README. Added the offline check-in design, the context diagram, the queued check-in header, the event core and the list-events GUI. | TODO |
