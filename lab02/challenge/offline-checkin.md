@@ -37,3 +37,4 @@ sequenceDiagram
         SW->>DB: Mark item state = Rejected (audit flagged)
     end
 ```
+## 2.Conflict Resolution Rule

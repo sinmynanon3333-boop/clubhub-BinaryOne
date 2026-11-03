@@ -3,7 +3,7 @@
 # Files of this Lab
 | File | Task | Author(s) |
 | :--- | :---: | :--- |
-| `lab02/offline-checkin.md`, `README.md` | Task 1 | Srum Master |
+| `lab02/offline-checkin.md`, `lab02/challenge/README.md` | Task 1 | Srum Master |
 | `lab02/app-classification.md`, `lab02/app-quadrant.md` | Task 2 | Admin |
 | `lab02/quality-scenarios.md`, `lab02/context-diagram` | Task 3 | Developer |
 | `lab02/adr-001-application.md`, `lab02/architectures.md` | Task 4 | Designer | 
