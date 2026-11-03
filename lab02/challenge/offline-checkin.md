@@ -42,19 +42,6 @@ sequenceDiagram
     P-->>O: Badge "38 synced, 2 need attention" with the reasons
 ```
 
-The server always answers the whole batch with HTTP 200 and decides per item, so one bad record never blocks the others:
-
-```json
-{
-  "results": [
-    { "clientCheckInId": "7c1e…", "status": "accepted" },
-    { "clientCheckInId": "a93f…", "status": "accepted", "replayed": true },
-    { "clientCheckInId": "d02b…", "status": "rejected", "reason": "REGISTRATION_CANCELLED" },
-    { "clientCheckInId": "5e44…", "status": "rejected", "reason": "NOT_REGISTERED" }
-  ]
-}
-```
-
 ## 2.Conflict Resolution Rule
 
 General rules behind the table:
