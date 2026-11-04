@@ -58,3 +58,49 @@ General rules behind the table:
 | **3** | Student not registered at all | The server. Scan rejected as `NOT_REGISTERED`. | If the student is missing from the cached roster, an amber tick "Not on the list, saved for checking" instead of green. After sync the item appears in "need attention" with an option to register them as a walk-in while online. | No attendance row. Scan kept in the audit log as rejected. |
 | **4** | Retry of an upload the server already applied (response was lost) | Nobody loses: the server recognises the `clientCheckInId`, does not apply it again and returns the original outcome with `replayed: true`. | Nothing new. The item turns to "synced" once and the counter does not go up twice. | Still one row. The stored outcome for that `clientCheckInId` is returned unchanged. |
 | **5** | Phone clock is 7 minutes wrong | Ordering uses the server's corrected time, not the phone's. The server works out `offset = receivedAt - deviceSentAt` for the batch and applies it to every item. The scan is still accepted if the corrected time is inside the event window. | A small amber banner on the phone "Your clock looks about 7 minutes off". Scans are not blocked. | Raw `scannedAt`, `clockOffset`, corrected scan time and `receivedAt` are all stored, so the correction can be audited. |
+
+
+## 3. Why the Idempotency Key (`localId`) is Essential
+
+### What is Idempotency?
+An operation is **idempotent** if doing it once has the exact same result as doing it multiple times:
+$$f(f(x)) = f(x)$$
+In our system, receiving the same check-in upload 1 time or 10 times must result in **exactly 1 attendance record**.
+
+---
+
+## 3. Why the Idempotency Key (`localId`) is Essential
+
+Each check-in has a unique tracking number called localId. It is important because the phone may send the same check-in more than once when the network is unstable. The server uses localId to recognise repeated requests and return the previous result without creating duplicate attendance records. This keeps attendance data accurate and makes retries safe.
+
+
+## 4. Trade-Offs Against Lab-02 Quality Scenarios
+
+Implementing an offline-first architecture introduces architectural trade-offs across our existing quality attribute scenarios:
+
+### 🟢 Quality Attributes Improved
+* **QAS-02 (Performance at Check-In):**  
+  Scans are evaluated instantly against local browser IndexedDB cache in $\le 100\text{ ms}$, completely eliminating network round-trip delays during high-traffic door entry.
+* **QAS-01 (Availability):**  
+  The door check-in system achieves $100\%$ operational availability at the entrance, regardless of router crashes, bandwidth congestion, or campus ISP dropouts.
+
+### 🔴 Quality Attributes Made Harder
+* **QAS-04 (Security & Strict Consistency):**  
+  Introduces an *eventual consistency* window. If an attendee cancelled their ticket moments before arrival, they might still gain entry before the scanner reconnects and synchronizes with the server.
+* **QAS-05 (Modifiability & System Complexity):**  
+  Managing bidirectional synchronization, persistent offline queues, retry policies, and conflict resolution tables significantly increases codebase complexity compared to a standard online-only API.
+
+---
+
+## 5. New Quality Scenario: 5-Minute Network Outage (QAS-07)
+
+This scenario formally evaluates how the architecture handles a total network breakdown during peak arrival:
+
+| Part | Description |
+| :--- | :--- |
+| **Source** | Event organiser scanning attendee tickets at the hall entrance. |
+| **Stimulus** | Venue Wi-Fi router overheats and crashes for 5 minutes during peak arrival (100 students arriving). |
+| **Environment** | Total network disconnection at the event entrance hall. |
+| **Artifact** | PWA Scanner interface, local ServiceWorker queue, and IndexedDB client storage. |
+| **Response** | The scanner transitions transparently to offline mode, continues scanning QR codes without blocking, stores all 100 records with unique client UUIDs in the local queue, and automatically batch-synchronizes all records to the central server within 10 seconds of network restoration. |
+| **Response Measure** | Exactly **0 scan interruptions**; **100% of the 100 arriving attendees** admitted without delay; exactly **0 check-in records lost or duplicated** upon server reconciliation. |
