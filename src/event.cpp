@@ -1,4 +1,4 @@
-#include "include/clubhub/event.hpp"
+#include "../include/clubhub/event.hpp"
 #include <iomanip>
 #include <sstream>
 #include <stdexcept>
