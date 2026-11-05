@@ -3,8 +3,8 @@
 #include <iomanip>
 #include <iostream>
 #include <string>
-#include "D:\clubhub-BinaryOne\src\include\clubhub\event.hpp"
-#include "D:\clubhub-BinaryOne\src\include\clubhub\event_csv.hpp"
+#include "../include/clubhub/event.hpp"
+#include "../include/clubhub/event_csv.hpp"
 
 namespace {
     int listEvents(const std::string& path) {
