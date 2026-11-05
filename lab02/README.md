@@ -15,8 +15,8 @@
 * Decision rules from `lab01/decision.md`
 
 # Architecture Diagram 
-![Context Diagram](image-3.png)
-![Architecture Diagram](image-2.png)
+![Context Diagram](context-diagram.png)
+![Architecture Diagram](architecture.png)
 
 # Channel Log
 | Date | Version | What changed | By |
