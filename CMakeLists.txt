@@ -13,3 +13,16 @@ target_include_directories(clubhub_core PUBLIC include)
 # would be another target that links the same core.
 add_executable(clubhub src/cli/main.cpp)
 target_link_libraries(clubhub PRIVATE clubhub_core)
+# Add ConsoleOutput.cpp to your core library
+add_library(clubhub_core
+    src/ConsoleOutput.cpp
+    # ... existing src/event.cpp files ...
+)
+target_include_directories(clubhub_core PUBLIC include)
+
+# Register the test executable with CTest
+add_executable(ConsoleOutputTest tests/ConsoleOutputTest.cpp)
+target_link_libraries(ConsoleOutputTest PRIVATE clubhub_core GTest::gtest_main)
+
+include(GoogleTest)
+gtest_discover_tests(ConsoleOutputTest)
