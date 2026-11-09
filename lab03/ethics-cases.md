@@ -1,6 +1,6 @@
 # Ethics Case Analyses · ITC Club Hub
 
-Version 1.0 · 2026-11-10 
+Version 1.0 · 2026-11-10 · Lead A = [Name]
 
 ---
 
@@ -15,3 +15,23 @@ Version 1.0 · 2026-11-10
 | **5. Tests** | **(a) Immediate implementation:** Harm test: Fails because students could lose control over their personal information. Rights test: Fails because students may not have been informed about this secondary use. Fairness test: Fails because students could be targeted without their knowledge. Publicity test: Fails because students and administrators may consider the data sharing inappropriate. **(b) Complete rejection:** Harm test: Passes because it prevents unauthorized disclosure. Rights test: Passes because student privacy is protected. Fairness test: Passes, although it may unnecessarily restrict legitimate recruitment. Publicity test: Passes because the decision can be openly explained. **(c) Suspend pending authorization:** Harm test: Passes because disclosure is prevented until approval. Rights test: Passes because authorization and privacy requirements are checked. Fairness test: Passes because the same requirements apply to everyone. Publicity test: Passes because the decision is transparent. **(d) Voluntary or anonymous alternative:** Harm test: Passes because privacy risks are minimized. Rights test: Passes because students retain control over participation. Fairness test: Passes because participation is voluntary. Publicity test: Passes because the method is transparent and defensible. |
 | **6. Decision and action** | Choose **(c) and (d)**. Do not implement the report until the clubs office confirms authorization, the original purpose of data collection, and the applicable privacy requirements. Meanwhile, propose an opt-in recruitment form or anonymous statistics. The development team must not rely solely on the club leader's personal relationship with the administrator as evidence of authorization. Document the decision and require proper approval before cross-club attendance information becomes accessible. |
 | **7. Reflection** | This situation demonstrates that having technical access to information does not mean having ethical permission to use it. Even a report intended to support recruitment can violate privacy if students are unaware of how their information is being reused. We learned that developers must question requests involving personal information, verify authorization, and prioritize users' rights over convenience or informal promises. |
+
+**Message to the club leader:**
+
+Thank you for suggesting this recruitment report. However, attendance records contain students' personal information, and we cannot reuse or share them for recruitment without confirming proper authorization and informing students about the purpose. We will first consult the clubs office to verify the applicable data-sharing policy and permissions. In the meantime, we suggest an opt-in recruitment form or anonymous attendance statistics as safer alternatives. We want to support recruitment while protecting students' privacy and maintaining their trust.
+
+**Preventive engineering change:**
+
+Implement Role-Based Access Control (RBAC) for attendance reports.
+
+Requirements:
+
+1. Club leaders can only access attendance records belonging to their own clubs.
+2. Cross-club attendance reports require administrative authorization.
+3. Every report access attempt must be recorded in an audit log.
+4. Unauthorized access attempts must receive an access-denied response.
+5. Access permissions must be verified on the server side.
+
+**GitHub issue:** #TODO (Label: ethics)
+
+---
