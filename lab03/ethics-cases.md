@@ -32,6 +32,6 @@ Requirements:
 4. Unauthorized access attempts must receive an access-denied response.
 5. Access permissions must be verified on the server side.
 
-**GitHub issue:** #TODO (Label: ethics)
+**GitHub issue:** #5 (Label: ethics)
 
 ---
