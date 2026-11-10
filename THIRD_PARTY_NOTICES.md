@@ -7,4 +7,4 @@ This project incorporates third-party open-source software. Below is a list of c
 - **Licence:** BSD-3-Clause
 - **Source:*https://github.com/google/googletest* 
 - **Usage:** Used exclusively for unit testing in development; not included in production binaries or shipped to end users.
-- **Licence Text:** See 
+- **Licence Text:** See [licenses/googletest-LICENSE.txt](licenses/googletest-LICENSE.txt).
