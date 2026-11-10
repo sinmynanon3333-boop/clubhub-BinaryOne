@@ -3,8 +3,8 @@
 This project incorporates third-party open-source software. Below is a list of components, their licences, and details:
 
 ## 1. GoogleTest
-- **Version:** v1.15.2
+- **Version:** v3.28
 - **Licence:** BSD-3-Clause
-- **Source:** 
+- **Source:*https://github.com/google/googletest* 
 - **Usage:** Used exclusively for unit testing in development; not included in production binaries or shipped to end users.
-- **Licence Text:** See 
+- **Licence Text:** See [licenses/googletest-LICENSE.txt](licenses/googletest-LICENSE.txt).

@@ -65,3 +65,20 @@ The following questions require clarification from the client:
 4. How long should student attendance and registration records be retained?
 5. What should happen when a student cancels a registration within 24 hours of an event?
 6. Should known defects be disclosed during a sprint review even when a fix is not yet available?
+
+## 5. Licence
+
+This project is released under the **MIT Licence**. The full text is in [LICENSE](LICENSE).
+
+Copyright (c) 2026 **BinaryOne**, ITC Club Hub contributors.
+
+## 6. Third-party Components
+
+Third-party code used by this project is listed in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). The licence text of each component is kept in the [licenses](licenses/) folder.
+
+| Component | Licence | Used for |
+|---|---|---|
+| GoogleTest | BSD-3-Clause | Unit tests only; not shipped |
+| FLTK | GNU LGPL v2 with the FLTK exception | The GUI (`src/gui`); linked into the application |
+
+ITC Club Hub is based in part on the work of the FLTK project (https://www.fltk.org).
