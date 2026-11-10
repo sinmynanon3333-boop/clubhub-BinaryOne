@@ -24,13 +24,13 @@ The following files were created or modified during Lab 03.
 | `lab03/privacy-notice.md` | Added | Privacy notice documentation. |
 | `lab03/retention-rules.md` | Added | Data retention rules. |
 
-## 2 . ## Licence
+## 2 . Licence
 
 This project is released under the **MIT Licence**. The full text is in [LICENSE](LICENSE).
 
 Copyright (c) 2026 **BinaryOne**, ITC Club Hub contributors.
 
-### Third-party components
+## 3 . Third-party components
 
 Third-party code used by this project is listed in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). The licence text of each component is kept in the [licenses](licenses/) folder.
 
