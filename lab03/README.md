@@ -23,3 +23,45 @@ The following files were created or modified during Lab 03.
 | `lab03/licence-decision.md` | Added | Software licence decision and rationale. |
 | `lab03/privacy-notice.md` | Added | Privacy notice documentation. |
 | `lab03/retention-rules.md` | Added | Data retention rules. |
+
+## 2. Earlier Lab Inputs Reused
+
+Lab 03 builds upon the work completed in the previous labs.
+
+| Previous Lab | Commit Hash | Reused Input |
+|---|---|---|
+| Lab 01 | `15acfd2` | Previous project requirements, planning, and initial project context. |
+| Lab 02 | `97cb469` | Previous implementation and project structure. |
+
+## 3. Change Log
+
+### Documentation and Ethics
+- Added accessibility checklist and AI feature proposal.
+- Documented command-line output requirements.
+- Created consent flow diagram.
+- Documented data inventory and privacy notice.
+- Established data retention rules.
+- Completed ethical analyses for Scenarios A and B.
+- Documented software licence decisions.
+
+### Implementation and Testing
+- Updated the CMake build configuration.
+- Added Student and ConsoleOutput components.
+- Added console output tests.
+- Added student privacy tests.
+
+### Ethical Improvements
+- Proposed role-based access control for cross-club attendance reports.
+- Proposed automated regression tests for cancellation rules and attendance calculations.
+- Documented decisions and communication with relevant stakeholders.
+
+## 4. Open Client Questions
+
+The following questions require clarification from the client:
+
+1. Which roles should be allowed to access student attendance information?
+2. Should cross-club attendance reports require explicit student consent?
+3. What information should be included in attendance reports?
+4. How long should student attendance and registration records be retained?
+5. What should happen when a student cancels a registration within 24 hours of an event?
+6. Should known defects be disclosed during a sprint review even when a fix is not yet available?
