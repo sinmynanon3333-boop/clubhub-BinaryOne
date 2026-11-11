@@ -1,0 +1,14 @@
+flowchart LR
+A["1. Student Opens Registration"] --> B["Show 1-Line Privacy Notice<br>with link to full notice"]
+B --> C["Enter Required Info:<br>Student ID, Name, Email"]
+C --> D{"Optional Consents<br>(Default: OFF)"}
+
+D -->|Checkbox 1: SMS Alerts| E1["Provide Phone Number"]
+D -->|Checkbox 2: Email Updates| E2["Enable Newsletter"]
+D -->|Declined / Unchecked| F["Account Created Successfully<br>(Core features work)"]
+
+E1 --> F
+E2 --> F
+
+F --> G["Settings / Profile Page"]
+G -->|Uncheck SMS| H["Withdraw Consent:<br>Phone deleted immediately"]
