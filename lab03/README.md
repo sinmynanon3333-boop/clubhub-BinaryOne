@@ -76,9 +76,11 @@ Copyright (c) 2026 **BinaryOne**, ITC Club Hub contributors.
 
 Third-party code used by this project is listed in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). The licence text of each component is kept in the [licenses](licenses/) folder.
 
-| Component | Licence | Used for |
-|---|---|---|
-| GoogleTest | BSD-3-Clause | Unit tests only; not shipped |
-| FLTK | GNU LGPL v2 with the FLTK exception | The GUI (`src/gui`); linked into the application |
+| Component | Version | Licence | Source | Used for | Shipped? |
+|---|---|---|---|---|---|
+| GoogleTest | 1.15.2 | BSD-3-Clause | https://github.com/google/googletest | tests | no |
+| FLTK | `Version 2` | LGPL-2.0 with FLTK exception | https://www.fltk.org | GUI | yes |
+
+Full details are in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md), and each component's licence text is in the [licenses](licenses/) folder.
 
 ITC Club Hub is based in part on the work of the FLTK project (https://www.fltk.org).
