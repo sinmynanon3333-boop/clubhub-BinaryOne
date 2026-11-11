@@ -21,13 +21,7 @@ Version 0.1 · 2026-11-06 · Authors: <CounterBlock>
 ## Lifecycle of the phone field
 ```mermaid
 flowchart LR
-  C["Collect<br/>student give phone<br/>with consent"]
-  S["Store<br/>secure database<br/>restricted acess"]
-  U["Use<br/>send club updates"]
-  R["Receive<br/>check consent<br/>and necesity]
-  D["Delet<br/>remove phone number<br/>when no longer needed"]
-
-  C --> S --> U --> R --> D
+  C["Collect<br/>student give phone<br/>with consent"] --> S["Store<br/>secure database<br/>restricted acess"] --> U["Use<br/>send club updates"] --> R["Receive<br/>check consent<br/>and necesity] -- >D["Delet<br/>remove phone number<br/>when no longer needed"]
 ```
 
 ## Client feedback
