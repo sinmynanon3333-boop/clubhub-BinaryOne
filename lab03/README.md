@@ -11,8 +11,8 @@ The following files were created or modified during Lab 03.
 | `include/clubhub/Student.h` | Added | Student data structure and declaration. |
 | `src/ConsoleOutput.cpp` | Added | Console output implementation. |
 | `src/Student.cpp` | Added | Student implementation. |
-| `src/tests/ConsoleOutputTest.cpp` | Added | Tests for console output functionality. |
-| `src/tests/StudentPrivacyTest.cpp` | Added | Tests related to student privacy. |
+| `tests/ConsoleOutputTest.cpp` | Added | Tests for console output functionality. |
+| `tests/StudentPrivacyTest.cpp` | Added | Tests related to student privacy. |
 | `lab03/README.md` | Added | Lab 03 documentation and change record. |
 | `lab03/accessibility-checklist.md` | Added | Accessibility requirements and checklist. |
 | `lab03/ai-feature-proposal.md` | Added | Proposed AI feature documentation. |
