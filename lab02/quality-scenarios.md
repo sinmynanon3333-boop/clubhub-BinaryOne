@@ -1,6 +1,6 @@
 # Lab-02 · Quality Attribute Scenarios for ITC Club Hub
 
-Version 1.0 · 2026-11-02 · Reviewed by (Scrum Master): Pending
+Version 1.0 · 2026-11-02 · Reviewed by (Scrum Master): Approved
 
 ## QAS-01 · Availability · written by Soth Mony Oudam
 
@@ -87,4 +87,4 @@ Security remains a high business priority and must also be addressed in the arch
 
 ### Review
 
-Scrum Master review: Pending.
+Scrum Master review: Approved.
