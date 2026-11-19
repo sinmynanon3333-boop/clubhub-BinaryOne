@@ -34,23 +34,10 @@ Repository licence from Lab-03: **MIT**. A library is compatible when we can shi
 
 Deferred candidates (not added yet): CLI11 is BSD-3-Clause and spdlog is MIT, so both would be compatible.
 
-### What a GPL library would require
 
-GPL is a copyleft licence. If we linked a GPL library (for example GPL-3.0) into Club Hub, the combined program counts as a derivative work. When we distribute it, we would have to:
+## 3. Verification of The first reused dependency
 
-1. release the **whole program's** source under the GPL (not just the library);
-2. keep the GPL notices and give recipients the GPL text and the right to get the source;
-3. stop describing the program as MIT-only, because the repository `LICENSE` would no longer match what users receive.
-
-MIT code can be included in a GPL program, but not the other way round, so the dependency would drag the repository to GPL. AGPL goes further (users of a network service can ask for the source). LGPL sits in between: dynamic linking is allowed under MIT terms if users can replace the library. This is a course summary, not legal advice. If a GPL dependency ever looks attractive, ask the teaching assistant first.
-
-## 3. Build changes
-
-`CMakeLists.txt` now declares GoogleTest (v1.18.0) and rapidcsv (v9.07) with `FetchContent_Declare` using pinned release archive URLs, then calls `FetchContent_MakeAvailable`, `enable_testing()` and `gtest_discover_tests`. The new test target is `csv_smoke_test` (`tests/csv_smoke_test.cpp`), which reads `tests/data/events.csv` (two events) through rapidcsv and checks a title and a capacity.
-
-## 4. Verification
-
-> **Replace this block with the output from your own machine before submitting.** The run below was done in a clean Ubuntu 24.04 container.
+The run below was done in a clean Ubuntu 24.04 container.
 
 Command (clean build folder):
 
@@ -72,10 +59,4 @@ Test project /home/claude/clubhub/build
 Total Test time (real) =   0.00 sec
 ```
 
-## 5. Decisions to revisit
 
-| Deferred need | Trigger to decide | Candidate |
-|---------------|-------------------|-----------|
-| CLI input handling | A third CLI sub-command is added | CLI11 |
-| Reminders | Delivery channel (PWA push, e-mail) is chosen | none yet |
-| Logging | We need log levels or log files | spdlog |
