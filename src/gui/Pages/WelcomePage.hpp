@@ -1,26 +1,29 @@
-#ifndef WELCOME_PAGE_HPP
-#define WELCOME_PAGE_HPP
+#pragma once
+
 #include <FL/Fl.H>
 #include <FL/Fl_Window.H>
 #include <FL/Fl_Box.H>
 #include <FL/Fl_Button.H>
 #include <FL/Fl_PNG_Image.H>
 #include <FL/Fl_Group.H>
-#include <FL/Fl_Help_View.H>
-#include "Components/Header.hpp"
+#include "D:\clubhub-BinaryOne\src\gui\Components\Header.hpp"
 using namespace header;
-class WelComePage : public Fl_Group{
-    public:
-     Fl_Button *btn=nullptr;
-    public:
-        WelComePage(int x,int y,int w,int h): Fl_Group(x, y, w, h){
-        Fl_Group *Welcome=new Fl_Group(0,0,w,h);
+class WelComePage : public Fl_Group
+{
+public:
+    
+    Fl_Button *btn=nullptr;
+public:
+   
+    WelComePage(int x, int y, int w, int h) : Fl_Group(x, y, w, h)
+    {
         int cap_w = 680;
         int cap_h = 36;
         int cap_x = (w / 2) - (cap_w / 2);
         int cap_y = 40;
-        HeaderPage *header=new HeaderPage(cap_x,cap_y,cap_w,cap_h);
-        Fl_PNG_Image *img = new Fl_PNG_Image("D:/clubhub-BinaryOne/Institute_of_Technology_of_Cambodia_logo.png");
+        HeaderPage *header = new HeaderPage(cap_x, cap_y, cap_w, cap_h);
+        header->show();
+        Fl_PNG_Image *img = new Fl_PNG_Image("D:/clubhub-BinaryOne/src/gui/Institute_of_Technology_of_Cambodia_logo.png");
         int img_w = 200;
         int img_h = 200;
         int img_x = (w / 2) - (img_w / 2);
@@ -28,7 +31,7 @@ class WelComePage : public Fl_Group{
 
         Fl_Box *image_box = new Fl_Box(img_x, img_y, img_w, img_h);
         image_box->box(FL_FLAT_BOX);
-        image_box->color(fl_rgb_color(0xEE, 0xF0, 0xFF));
+        image_box->color(fl_rgb_color(206, 216, 235));
         Fl_Image *scaled_img = img->copy(img_w, img_h);
         image_box->image(scaled_img);
         Fl_Group *title = new Fl_Group(w / 2, img_y + 130, 250, 200);
@@ -112,10 +115,10 @@ class WelComePage : public Fl_Group{
         text_view->labelcolor(fl_rgb_color(131, 138, 133));
         text_view->labelsize(17);
         card->end();
-        Welcome->end();
-        end();
-            }
-
-
+        this->end();
+    }
+    //  static void testing(Fl_Widget * widget,void * data){
+    //     widget->label("clicked");
+    // }
+     
 };
-#endif

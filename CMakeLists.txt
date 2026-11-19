@@ -28,13 +28,37 @@ endif()
 
 # Executable: Command-line interface frontend
 # add_executable(clubhub src/main.cpp)
-add_executable(clubhub src/cli/main.cpp)
-target_link_libraries(clubhub PRIVATE clubhub_core)
+# add_executable(clubhub src/gui/main.cpp)
+# target_link_libraries(clubhub PRIVATE clubhub_core)
 
 # ==============================================================================
 # Testing: GoogleTest Setup for Lab-03
 # ==============================================================================
 include(FetchContent)
+# ==============================================================================
+# FLTK (GUI)
+# ==============================================================================
+FetchContent_Declare(
+    fltk
+    URL https://github.com/fltk/fltk/archive/refs/tags/release-1.4.1.zip
+)
+set(FLTK_BUILD_TEST OFF CACHE BOOL "" FORCE)
+set(FLTK_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
+set(FLTK_BUILD_FLUID OFF CACHE BOOL "" FORCE)
+FetchContent_MakeAvailable(fltk)
+
+# Executable: GUI frontend
+# add_executable(clubhub src/main.cpp)
+add_executable(clubhub src/gui/main.cpp)
+target_link_libraries(clubhub PRIVATE clubhub_core fltk::fltk fltk::images)
+
+if(WIN32)
+    set_target_properties(clubhub PROPERTIES WIN32_EXECUTABLE ON)
+    if(MSVC)
+        # Keep a normal int main() with WIN32_EXECUTABLE
+        target_link_options(clubhub PRIVATE /ENTRY:mainCRTStartup)
+    endif()
+endif()
 FetchContent_Declare(
     googletest
     URL https://github.com/google/googletest/archive/refs/tags/v1.15.2.zip

@@ -1,5 +1,4 @@
-#ifndef LOGIN_FORM_HPP
-#define LOGIN_FORM_HPP
+#pragma once
 
 #include <FL/Fl.H>
 #include <FL/Fl_Double_Window.H>
@@ -9,47 +8,38 @@
 #include <FL/Fl_Secret_Input.H>
 #include <FL/Fl_Button.H>
 #include <FL/Fl_Check_Button.H>
-#include "Components/Header.hpp"
+#include "D:\clubhub-BinaryOne\src\gui\Components\Header.hpp" 
 #define FL_HEX_COLOR(r, g, b) fl_rgb_color((r), (g), (b))
 using namespace header;
 class StudentLoginCard : public Fl_Group
 {
 private:
-    // Tab Selectors
     Fl_Button *tab_student;
     Fl_Button *tab_club;
     Fl_Button *tab_organiser;
     Fl_Button *tab_admin;
 
-    // Header Content
     Fl_Box *lbl_title;
     Fl_Box *lbl_badge;
     Fl_Box *lbl_desc;
-
-    // Input Components (Using structured panel/entry combos)
     Fl_Input *email_input;
     Fl_Secret_Input *pass_input;
     Fl_Button *pass_forgot;
 
-    // Selection & Submission Row Components
     Fl_Check_Button *remember_chk;
     Fl_Box *lbl_branches;
-    Fl_Button *btn_submit;
+    
     Fl_Button *lbl_activate;
-
 public:
+    Fl_Button *btn_submit;
     StudentLoginCard(int X, int Y, int W, int H) : Fl_Group(X, Y, W, H)
     {
 
-        // Aesthetic design values synced directly from your reference screen token palette layout
         Fl_Color bg_card = FL_HEX_COLOR(255, 255, 255);
         Fl_Color text_dark = FL_HEX_COLOR(15, 23, 42);
         Fl_Color text_muted = FL_HEX_COLOR(100, 116, 139);
         Fl_Color primary_blue = FL_HEX_COLOR(0, 82, 204);
         Fl_Color input_bg = FL_HEX_COLOR(241, 244, 250);
-        Fl_Color tab_inactive = FL_HEX_COLOR(238, 242, 255);
-
-        // Core base backing plate frame block surface setup
         this->box(FL_RFLAT_BOX);
         this->color(bg_card);
         int cap_w = 680;
@@ -176,4 +166,3 @@ public:
         btn_submit->callback(cb, p);
     }
 };
-#endif
