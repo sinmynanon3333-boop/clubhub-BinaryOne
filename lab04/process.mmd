@@ -1,21 +1,40 @@
-flowchart TD
-    subgraph Phase1 ["Phase 1: Upfront Specification & Modeling (Weeks 5-8)"]
-        A["Requirements Elicitation & SRS<br/>(Weeks 5-6 · Product Owner)"] --> B["UML & C++20 Architecture Modeling<br/>(Week 7 · Lead Developer)"]
-        B --> C["Midterm Exam & Checkpoint 1<br/>(Week 8 · Whole Team)"]
+flowchart LR
+    %% Custom Gray Theme Styling
+    classDef phaseBox fill:#f4f4f5,stroke:#71717a,stroke-width:2px,color:#18181b
+    classDef stepNode fill:#e4e4e7,stroke:#52525b,stroke-width:1.5px,color:#18181b
+    classDef decisionNode fill:#d4d4d8,stroke:#3f3f46,stroke-width:2px,color:#09090b
+
+    subgraph Phase1 ["Phase 1: Upfront Specification (Weeks 5–8)"]
+        direction TB
+        A["Requirements Elicitation & SRS<br/>(Weeks 5–6 · Product Owner)"]:::stepNode
+        B["UML, GUI Wireframes & Architecture<br/>(Week 7 · Lead Developer)"]:::stepNode
+        C["Midterm Exam & Checkpoint 1<br/>(Week 8 · Whole Team)"]:::stepNode
+        A --> B --> C
     end
 
-    subgraph Phase2 ["Phase 2: Iterative Sprint Cycles (Weeks 9-12)"]
-        C --> D["Sprint Planning<br/>(Sprint 1: Wk 9 / Sprint 2: Wk 11 · Rotating Scrum Master)"]
-        D --> E["Feature Implementation & Weekly Sync<br/>(Developers)"]
-        E --> F["CMake Build & GoogleTest CI<br/>(Scrum Master & Devs)"]
-        F --> G["Sprint Review, Demo & Retrospective<br/>(Product Owner, Team & Client)"]
-        G --> H{"Sprint 2<br/>Finished?"}
+    subgraph Phase2 ["Phase 2: Iterative Sprint Cycles (Weeks 9–12)"]
+        direction TB
+        D["Sprint Planning<br/>(Sprint 1: Wk 9 / Sprint 2: Wk 11 · Rotating Scrum Master)"]:::stepNode
+        E["GUI & Core Feature Implementation<br/>(Developers)"]:::stepNode
+        F["CMake Build & GoogleTest CI<br/>(Scrum Master & Devs)"]:::stepNode
+        G["Sprint Review, Demo & Retrospective<br/>(Product Owner, Team & Client)"]:::stepNode
+        H{"Sprint 2<br/>Finished?"}:::decisionNode
+
+        D --> E --> F --> G --> H
         H -- "No (End of Sprint 1)" --> D
+        G -. "Client Feedback & Backlog Refinement" .-> D
     end
 
-    subgraph Phase3 ["Phase 3: Release & Delivery (Weeks 13-14)"]
-        H -- "Yes" --> I["Hardening, Bug Fixing & Docs Polish (Week 13)<br/>(Feature Freeze · Whole Team)"]
-        I --> J["Final Submission & Client Demo<br/>(Week 14 · Whole Team)"]
+    subgraph Phase3 ["Phase 3: Release & Delivery (Weeks 13–14)"]
+        direction TB
+        I["Hardening, Bug Fixing & Docs Polish<br/>(Week 13 · Feature Freeze)"]:::stepNode
+        J["Final Submission & Client Demo<br/>(Week 14 · Whole Team)"]:::stepNode
+        I --> J
     end
 
-    G -. "Client Feedback & Backlog Refinement" .-> D
+    %% Connections between phases
+    C --> D
+    H -- "Yes" --> I
+
+    %% Apply gray styling to the phase containers
+    class Phase1,Phase2,Phase3 phaseBox
