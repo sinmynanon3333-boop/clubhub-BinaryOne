@@ -14,8 +14,8 @@ TEST(CsvSmokeTest, ReadsEventTitlesAndCapacities) {
     
     // Verify file contents
     ASSERT_EQ(titles.size(), 2U);
-    EXPECT_EQ(titles.at(0), "Robotics Workshop");
-    EXPECT_EQ(titles.at(1), "Hackathon Night");
+    EXPECT_EQ(titles.at(0), "Introduction to Robotics");
+    EXPECT_EQ(titles.at(1), "Hackathon kickoff");
     EXPECT_EQ(capacities.at(0), 25);
     EXPECT_EQ(capacities.at(1), 30);
 }
