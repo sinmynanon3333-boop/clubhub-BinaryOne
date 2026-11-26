@@ -22,10 +22,10 @@ Scale: 1 = fits Club Hub badly on this criterion, 5 = fits very well.
 Calculation, Scrum-style:
 (25×5 + 20×4 + 20×4 + 20×5 + 15×5) / 100 = (125 + 80 + 80 + 100 + 75) / 100 = 460 / 100 = 4.60
 
-*(Verification for other models: Waterfall = (25×2 + 20×1 + 20×2 + 20×2 + 15×1) / 100 = 1.65; Incremental = (25×4 + 20×3 + 20×4 + 20×4 + 15×4) / 100 = 3.80)
+*(Verification for other models: Waterfall = (25×2 + 20×1 + 20×2 + 20×2 + 15×1) / 100 = 1.65; Incremental = (25×4 + 20×3 + 20×4 + 20×4 + 15×4) / 100 = 3.80)*
 
 ## Sensitivity check
-Moving 10 points from Requirements stability (25 → 15) to Team experience (15 → 25) changes the scores to Waterfall 2.35, Incremental 3.75, and Scrum-style 4.30, so the winner does not change.
+Moving 10 points from Requirements stability (25 → 15) to Risk (15 → 25) changes the scores to Waterfall 1.55, Incremental 3.80, and Scrum-style 4.60, so the winner does not change.
 
 ## Conclusion
-Scrum-style iterative development scores highest (4.50) because it directly addresses Club Hub's evolving requirements and strict week 14 deadline through short, demonstrable increments. Its main weakness for our team is limited prior sprint experience, which we will manage by keeping ceremonies lightweight (e.g., 15-minute standups twice a week) and writing clear Definition of Done checklists. A lightweight hybrid—pairing Scrum sprints with a brief, upfront Waterfall-style architecture and database schema design phase in week 1—would likely score even better by preventing costly structural refactoring mid-semester.
+Scrum-style iterative development scores highest (4.60) because it directly addresses Club Hub's evolving requirements, limited 30-minute weekly client availability, and strict week 14 deadline through short, demonstrable increments. Its biggest weakness is the risk of scope creep and C++ class refactoring if we jump into coding without agreeing on module interfaces first, which we will manage with strict sprint backlogs and automated CMake tests. A lightweight hybrid—pairing Scrum sprints with a brief, upfront Waterfall-style architecture and CSV data design phase in week 1—would likely score even better by preventing structural rework mid-semester.
